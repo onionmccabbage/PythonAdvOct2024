@@ -25,14 +25,14 @@ Monday
   > what do you want to know
 > classes 
 q - what is -> str all about....?
-- mini review exercise
-- abstract and concrete classes
+> mini review exercise
+> abstract and concrete classes
 - validate types: isinstance, type, int(float())
-- inheritance
-- name mangled members
+> inheritance
+> name mangled members
 - using slots with classes (fix my example)
 - if __name__== '__main__'
-- using decorators
+> using decorators
 - which kind of Python...
 - after lunch review
 - functional programming: map, filter and reduce  
