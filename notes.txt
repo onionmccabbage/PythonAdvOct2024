@@ -1,12 +1,15 @@
 Advanced Python
 ===============
-all my code is here:
+Toby Dussek
+
+
+all my code will be here:
 https://github.com/onionmccabbage/PythonAdvOct2024
 
 9:30 start
-11:00 coffee (15 mins)
+11:00 morning break
 12:30 lunch (1 hr)
-3:00 tea (15 mins)
+3:00 afternoon break
 4:30 end
 
 You will need:
@@ -21,6 +24,7 @@ Monday
   - what do you currently know
   - what do you want to know
 - classes 
+q - what is -> str all about....?
 - abstract and concrete classes
 - validate types: isinstance, type, int(float())
 - inheritance
@@ -37,11 +41,11 @@ Monday
 
 Tuesday
 - processing text/json
-  - json.loads() takes JSON and returns Python structure
-  - json.dumps() takes Python structure and returns JSON
-- persisting files: read/write/append/exclusive/overwrite, text, bytes, json
+  - json.loads(rsisting files: read/write/append/exclusive/overwrite, text, bytes, json
 - redirect stdout
-- databases
+- databases) takes JSON and returns Python structure
+  - json.dumps() takes Python structure and returns JSON
+- pe
   see https://wiki.python.org/moin/DatabaseProgramming
 - other db connections
 - Create, Read and Update (and Delete) - CRUD operations
