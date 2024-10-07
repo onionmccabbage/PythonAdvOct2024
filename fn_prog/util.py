@@ -1,5 +1,5 @@
 
-def raiseToPower(m,n):
+def raiseToPower(m,n=2):
     '''raise m to the power of n'''
     return m**n
 
