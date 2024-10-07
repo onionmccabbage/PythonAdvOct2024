@@ -45,7 +45,9 @@ class Shape(AbstractShape): # we choose to inherit from our ABC
         else:
             raise TypeError('Colour must be a non-empty string')
     #our abstract base class insists that we implement a __str__ method
-    def __str__(self): # remember - __str__ will be used by print()
+    # Careful: Python will NOT enforce the return-type annotation
+    # the annotation is used by language engines to improve LINTING
+    def __str__(self)->str: # remember - __str__ will be used by print()
         return f'Shape with {self.num_sides} sides, size: {self.size} colour: {self.colour}' # calls the num_sides getter method
 
 def main():

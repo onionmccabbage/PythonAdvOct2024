@@ -20,10 +20,10 @@ You will need:
 Python code lives in classes (or in functions), in modules, which live in packages (folders)
 
 Monday
-- intro and welcome
-  - what do you currently know
-  - what do you want to know
-- classes 
+> intro and welcome
+  > what do you currently know
+  > what do you want to know
+> classes 
 q - what is -> str all about....?
 - mini review exercise
 - abstract and concrete classes
