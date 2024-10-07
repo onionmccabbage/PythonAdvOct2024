@@ -1,4 +1,4 @@
-Advanced Python Review Exercise 1 until about 2:40-ish
+Advanced Python Review Exercise 1
 =================================
 Write an abstract base class with a property 'n' and a __str__ method
 
@@ -7,7 +7,7 @@ Provide the property as expected by the ABC
 This property will be validated as a positive integer
 Write decorated methods to get and set the property
 Invalid entries should default to 1 (or thow an exception)
-Use 'name-mangling' for the actual property
+Use 'name-mangling' for the actual property __n
 
 Write methods to return the square of 'n' and the square root of 'n'   ( sqrt = n**0.5 # returns square root of n )
 
@@ -27,7 +27,7 @@ Write a method in your class which finds out if the integer is odd or even
 Write another method which finds out if the number is itself a square number
 Use these functions in your __str__ method
 
-Extend your class into a new class that also takes a boolean values
+Extend your class into a new class that also takes a boolean value
 If the boolean is set to True, your __str__ method should also show todays date
 
 Write a class method which will be the total of all values of 'n' across all instances

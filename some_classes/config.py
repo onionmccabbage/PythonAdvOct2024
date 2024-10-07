@@ -11,13 +11,13 @@ if __name__ == '__main__':
         '''use additional arguments for values in our figure class'''
         # CAREFUL - all sys.argv members are STRINGS
         num_sides = int(float(sys.argv[1]))
-        size = int(float(sys.argv[2]))
+        size = float(sys.argv[2])
         colour = sys.argv[3]
         name = sys.argv[4]
     else: # if no suitable values weree provided, ask the user
         # CAREFUL - remember 'input' is ALWAYS a string
         num_sides = int(float(input('How many sides? ')))
-        size = int(float(input('Figure size? ')))
+        size = float(input('Figure size? '))
         colour = input('Colour? ')
         name = input('Name? ')
     # construct an instance
