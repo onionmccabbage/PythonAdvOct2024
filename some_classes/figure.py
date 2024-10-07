@@ -19,10 +19,13 @@ class Figure(Shape):
             self.__name  = name
         else:
             raise TypeError('Name must be a non-empty string')
+    # we might choose to write additonal methods, e.g. tp derive values (e.g. area) from the properties
     # we can override methods from the parent with our own methods
     def __str__(self) -> str:
         return f'{self.name} has {self.num_sides} sides, and is {self.colour} size {self.size}'
 
 if __name__ == '__main__':
     f1 = Figure(5, 3.2, 'red', 'pentagon')
+    # we can mutate properties by calling the setter-method of a class as if it is a property
+    f1.size = 4.5 # the setter method will validate this property
     print(f1) # use the __str__ method
