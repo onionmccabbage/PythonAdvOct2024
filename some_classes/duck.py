@@ -7,7 +7,7 @@ class Duck():
         Duck.count += 1 # every new duck instance will increment this count
     # we may also like to have a method that belongs to the class
     @classmethod # a decorator
-    def howMany(cls):
+    def howMany(cls): # cls is the conventional name forthe class itself
         return f'The Duck class has {cls.count} instances'
 
 
@@ -18,4 +18,6 @@ if __name__ == '__main__':
     print(Duck.count) # 2
     d3 = Duck('Eider')
     print(Duck.count) # 3
+    # duck-typing... if it looks ike a duck, walks like a duck, its probably a duck
+    d99 = {'n':'Roast'} # this is like a Duck instance, so Python considers it to be a Duck instance
     print( Duck.howMany() )  # 3
