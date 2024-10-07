@@ -19,4 +19,10 @@ class Figure(Shape):
             self.__name  = name
         else:
             raise TypeError('Name must be a non-empty string')
-        
+    # we can override methods from the parent with our own methods
+    def __str__(self) -> str:
+        return f'{self.name} has {self.num_sides} sides, and is {self.colour} size {self.size}'
+
+if __name__ == '__main__':
+    f1 = Figure(5, 3.2, 'red', 'pentagon')
+    print(f1) # use the __str__ method
