@@ -15,9 +15,9 @@ Declare a __str__ method which returns the number, the square of the number and 
 
 Exercise the code to show it works as expected ( if __name__ ...)
 Try to access the name-mangled property directly from outside an instance of the class.
-e.g.    t = myInst.__num # (should fail)
+e.g.    t = myInst.__n # (should fail)
 See if you can set a value for this name-mangled property
-e.g.    myInst.__num = 99 # this seems to work but...
+e.g.    myInst.__n = 99 # this seems to work but...
 
 At the end, some of you may like to show what you built
 
