@@ -7,7 +7,7 @@ all my code will be here:
 https://github.com/onionmccabbage/PythonAdvOct2024
 
 9:30 start
-11:00 morning break until 11:15
+11:00 morning break
 12:30 lunch (1 hr)
 3:00 afternoon break
 4:30 end

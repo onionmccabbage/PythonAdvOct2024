@@ -1,8 +1,8 @@
 from my_abc import ABCReview
 
-class NumberFun():
+class NumberFun(): # no special inheritance
 # class NumberFun(ABCReview):
-    __slots__ = ('__n',)
+    __slots__ = ('__n',) # these slots need to be in the highest hierachy
     def __init__(self, num):
         self.n = num # use the setter method
     def __str__(self):
