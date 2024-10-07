@@ -1,4 +1,4 @@
-Advanced Python Review Exercise 1
+Advanced Python Review Exercise 1 for 1hr until 2:45
 =================================
 Write an abstract base class with a property 'n' and a __str__ method
 
