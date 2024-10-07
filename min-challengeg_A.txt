@@ -1,0 +1,4 @@
+In the abstract base class, declare two further properties: colour and size
+In the concrete class, implement these with get/set methods. Validate colur is non-empty string, size is _ve number
+Use name-mangling (__size, __colour)
+Sett hese values in the instance

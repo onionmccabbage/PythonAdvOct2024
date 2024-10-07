@@ -25,6 +25,16 @@ class AbstractShape(metaclass=ABCMeta): # we now have our own abstract base clas
     @abstractmethod
     def num_sides(self, num_sides):
         pass
+    @property
+    @abstractmethod
+    def size(self, size):
+        pass
+    @property
+    @abstractmethod
+    def colour(self, colour):
+        pass
+
+
     @abstractmethod
     # we may choose to indicate a return type
     def __str__(self) -> str: # remember - all classes will use __str__ when printed
