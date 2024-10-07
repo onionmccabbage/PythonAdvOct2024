@@ -4,6 +4,8 @@ def myFn(x, y=3):
     '''x is a positional argument, y is a keyword argument'''
     return (x,y) # a tuple
 
+#single asterisk * will gather together positional arguments
+#double asterisk ** will gather together keyword arguents
 def doStuff(*args, **kwargs): # arg and kwarg are simply conventions
     return args, kwargs # a tuple and a dict
 
