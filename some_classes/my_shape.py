@@ -19,11 +19,19 @@ class Shape(AbstractShape): # we choose to inherit from our ABC
             self.__num_sides = num_sides # set the name-mangled property
         else: # what to do if the num_sides is invalid
             raise TypeError('Number of sides must be a positive integer')
+    #our abstract base class insists that we implement a __str__ method
+    def __str__(self): # remember - __str__ will be used by print()
+        return f'Shape with {self.num_sides} sides' # calls the num_sides getter method
 
-
-
+def main():
+    '''call this function'''
+    '''make instances of our class'''
+    try:
+        s1 = Shape(-3) # this will invoke the __init__ method once
+    except TypeError as te:
+        print(f'Problem: {te}') # return a helpful message
+    print(s1) # this will invoke the __str__ method of our class
 
 
 if __name__ == '__main__':
-    '''make instances of our class'''
-    s1 = Shape(3) # this will invoke the __init__ method once
+    main() # this is a common architecture
