@@ -5,10 +5,12 @@ def raiseToPower(m,n=2):
     '''raise m to the power of n'''
     return m**n
 
+@showArgs
 def squareIt(a):
     '''return the square of a'''
     return a*a
 
+@showArgs
 def addThem(p, q):
     '''add them'''
     return p+q
