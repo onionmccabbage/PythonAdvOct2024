@@ -14,7 +14,7 @@ def readDB():
         # we can now read back any resulting data
         rows = curs.fetchall()
         conn.close()
-        return rows
+        return rows # a list of tuples
     except Exception as e:
         print(e)
 
