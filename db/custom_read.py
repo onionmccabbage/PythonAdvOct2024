@@ -15,6 +15,7 @@ def customRead(w):
         conn.close()
     except Exception as e:
         print(e)
+    return rows
 
 if __name__ == '__main__':
     w = input('Which creature? ')
