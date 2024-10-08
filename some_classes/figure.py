@@ -2,8 +2,6 @@
 # we then add a 'name' property
 from my_shape import Shape
 
-
-
 class Figure(Shape):
     '''All the properties and methods of Shape are now available to us. We typically call the __init__ of Shape
     We will also have a property for 'name' '''
@@ -22,7 +20,11 @@ class Figure(Shape):
     # we might choose to write additonal methods, e.g. tp derive values (e.g. area) from the properties
     # we can override methods from the parent with our own methods
     def __str__(self) -> str:
-        return f'{self.name} has {self.num_sides} sides, and is {self.colour} size {self.size}'
+        '''within a class we MUST refer to 'self' to access class methods'''
+        return  self.doText() + f' and is {self.colour} size {self.size}'
+    def doText(self):
+        '''return info about this class'''
+        return f'{self.name} has {self.num_sides} sides'
 
 if __name__ == '__main__':
     f1 = Figure(5, 3.2, 'red', 'pentagon')
