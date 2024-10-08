@@ -16,7 +16,7 @@ def populateDB(creatures_t):
                 n = item['creature'] # read a member from the dictionary
             else:
                 raise Exception('Creature name must be a string')
-            if type(item['count']==int):
+            if type(item['count'])==int:
                 count = item['count']
             else:
                 raise Exception('Creature count must be an integer')
