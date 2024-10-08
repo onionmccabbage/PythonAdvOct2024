@@ -7,7 +7,7 @@ all my code will be here:
 https://github.com/onionmccabbage/PythonAdvOct2024
 
 9:30 start
-11:00 morning break
+11:00 morning break until 11:15
 12:30 lunch (1 hr)
 3:00 afternoon break
 4:30 end
@@ -49,7 +49,7 @@ Tuesday
   > json.loads() takes JSON and returns Python structure
   > json.dumps() takes Python structure and returns JSON
 > persisting files: read/write/append/exclusive/overwrite, text, bytes, json
-- redirect stdout
+> redirect stdout
 - databases
   see https://wiki.python.org/moin/DatabaseProgramming
 - other db connections
