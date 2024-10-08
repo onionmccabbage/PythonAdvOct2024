@@ -17,7 +17,20 @@ def writeToFile(t):
     except Exception as e:
         print(e)
 
+def seekContent(n=18):
+    '''seek to specific content within a text file'''
+    try:
+        fin = open('my_log.txt', 'rt')
+        fin.seek(n) # move the file cursor to the position n
+        the_rest = fin.read()
+        fin.close()
+        return the_rest
+    except Exception as e:
+        print(e)
+
+
 if __name__ == '__main__':
     txt = 'Here is a lot of text to be written to a file'
     writeToFile(txt)
+    print( seekContent(42) )
     
