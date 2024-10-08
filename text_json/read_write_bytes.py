@@ -37,5 +37,5 @@ if __name__ == '__main__':
     b5 = 'this is plain text \n'.encode('utf16')
     writeBytes(b5)
     b6 = readBytes()
-    s2 = b6.decode()
+    s2 = b6.decode('utf16') # ecode must match encoding
     print(s2)
