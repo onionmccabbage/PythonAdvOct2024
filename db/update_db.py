@@ -9,7 +9,7 @@ def customUpdate(w):
     st = f'''
     UPDATE zoo
     SET count={q}
-    WHERE creature = "{a}"
+    WHERE creature LIKE "{a}%"
 '''
     try:
         curs.execute(st)

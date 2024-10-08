@@ -6,7 +6,7 @@ def readDB():
     curs = conn.cursor()
     # sql statement
     st = '''
-    SELECT * FROM zoo
+    SELECT creature, count, cost FROM zoo
 '''
     try:
         curs.execute(st)
