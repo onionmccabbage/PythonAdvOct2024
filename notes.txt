@@ -50,16 +50,17 @@ Tuesday
   > json.dumps() takes Python structure and returns JSON
 > persisting files: read/write/append/exclusive/overwrite, text, bytes, json
 > redirect stdout
-- databases
+> databases
   see https://wiki.python.org/moin/DatabaseProgramming
-- other db connections
-- Create, Read and Update (and Delete) - CRUD operations
-- populate db with sample data
-- read and nicely format values from the db
-- explore external API as a remote data source for JSON
+> other db connections
+  Postreg https://www.psycopg.org/
+> Create, Read and Update (and Delete) - CRUD operations
+> populate db with sample data
+> read and nicely format values from the db
+> explore external API as a remote data source for JSON
 - after lunch review exercise 
   ask questions, help each other, share code
-- we will be using the 'requests' library
+> we will be using the 'requests' library
   (you may come across the urllib.requests which is the old-skool way of doing things)
 
 Wednesday
