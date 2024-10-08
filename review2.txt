@@ -1,8 +1,8 @@
-Advanced Python Review 2
+Advanced Python Review 2 1hr 10min until 2:50 then show-and-tell
 ========================
 This is an opportunity to work with databases, or if you prefer 
 do the whole exercise with file read/write instead of databases
-Fel free to use any database system you have available, or sqlite3
+Feel free to use any database system you have available, or sqlite3
 
 In a new package, write a module to implement a database (or file) for 'posts'
 Use the following API to grab a very large number of 'posts':
@@ -33,6 +33,7 @@ Once the initial database has been created, write code to encapslate neat ways t
 
 Optional:
 Populate a new database table with the 'todos' from https://jsonplaceholder.typicode.com/todos
+Find ways to re-use existing code
 Find a way to show only 'completed' todo items for a given userId
 Show all todos AND posts for a given userId
 Find all the incomplete todos and set them to completed
@@ -44,5 +45,5 @@ The log files should be named for the type of transaction, so for example
 - a file containing all inserts
 - a file containing all updates
 - a file containing all searches
-Use a system argument variable to switch between sending output to these text files or to the norma console
+Use a system argument variable to switch between sending output to these text files or to the normal console
 (use redirection)
