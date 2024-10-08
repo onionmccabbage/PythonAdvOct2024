@@ -9,7 +9,8 @@ class RedirectOut():
         '''the __enter__ method runs whenever this class or an instance is run'''
         self.orig_stdout = sys.stdout
         sys.stdout = self.stdout # all output will be directed to this new stream
-    def __exit__(self):
+    # Careful - __exit__ MUST be given some default parameters
+    def __exit__(self,  exc_type, exc_value, exc_traceback):
         ''' the __exit__ method is invoked whenever the class or an instance finishes'''
         sys.stdout = self.orig_stdout # recover the original stream
 
