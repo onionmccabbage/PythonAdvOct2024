@@ -21,4 +21,5 @@ if __name__ == '__main__':
             print('this will end up in our text file')
         # when the with ends, we are back to normal
         print('normal service resumed')
+    # at this point, the first 'with' ends
         
