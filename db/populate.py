@@ -20,7 +20,7 @@ def populateDB(creatures_t):
                 count = item['count']
             else:
                 raise Exception('Creature count must be an integer')
-            if type(item['cost'] in (float, int)):
+            if type(item['cost']) in (float, int):
                 cost = item['cost']
             else:
                 raise Exception('Creature cost must be a float or int')
