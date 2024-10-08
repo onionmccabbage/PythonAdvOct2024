@@ -12,6 +12,7 @@ def writeToFile(t):
             else:
                 part = t[offset:offset+chunk] # [start:stop-before]
                 fout.write(part) # commit these characters to the file
+                offset += chunk
         fout.close() # tidy up
     except Exception as e:
         print(e)
