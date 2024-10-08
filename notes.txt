@@ -30,23 +30,27 @@ Monday
 - validate types: isinstance, type, int(float())
 > inheritance
 > name mangled members
-<-> using slots with classes
+> using slots with classes
 - if __name__== '__main__'
 > using decorators
 - which kind of Python...
 > after lunch review
-- functional programming: map, filter and reduce  
-- functional programming: parameters
+> functional programming: map, filter and reduce  
+> functional programming: parameters
 - comprehensions, generators and yield
 - Loading local and remote data (requests)
 
 Tuesday
+- the course website: https://s3.eu-west-1.amazonaws.com/neueda.conygre.com/Sites/Ericsson_Advanced_Python/site/index.html
+- the recordings: username student password Belfast2024
+- available for a week or two (then deleted)
+q - call class method from within - need to use 'self.methodname()'
 - processing text/json
-  - json.loads(rsisting files: read/write/append/exclusive/overwrite, text, bytes, json
-- redirect stdout
-- databases) takes JSON and returns Python structure
+  - json.loads() takes JSON and returns Python structure
   - json.dumps() takes Python structure and returns JSON
-- pe
+- persisting files: read/write/append/exclusive/overwrite, text, bytes, json
+- redirect stdout
+- databases
   see https://wiki.python.org/moin/DatabaseProgramming
 - other db connections
 - Create, Read and Update (and Delete) - CRUD operations
