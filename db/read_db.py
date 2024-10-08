@@ -21,3 +21,5 @@ def readDB():
 if __name__ == '__main__':
     r = readDB()
     print(r, type(r))
+    for animal in r:
+        print(f'We have {animal[1]} {animal[0]} each costing {animal[2]}')
