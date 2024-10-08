@@ -45,10 +45,10 @@ Tuesday
 > the recordings: username student password Belfast2024
 > available for a week or two (then deleted)
 > call class method from within - need to use 'self.methodname()'
-- processing text/json
-  - json.loads() takes JSON and returns Python structure
-  - json.dumps() takes Python structure and returns JSON
-- persisting files: read/write/append/exclusive/overwrite, text, bytes, json
+> processing text/json
+  > json.loads() takes JSON and returns Python structure
+  > json.dumps() takes Python structure and returns JSON
+> persisting files: read/write/append/exclusive/overwrite, text, bytes, json
 - redirect stdout
 - databases
   see https://wiki.python.org/moin/DatabaseProgramming
