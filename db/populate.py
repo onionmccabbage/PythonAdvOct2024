@@ -26,9 +26,10 @@ def populateDB(creatures_t):
                 raise Exception('Creature cost must be a float or int')
             curs.execute(st, (n,count, cost)) # here we replace ?,?,? with sanitized values
             conn.commit()
-            conn.close()
         except Exception as e:
             print(e)
+    if conn: # may have already rasied an exception
+        conn.close()
 
 if __name__ == '__main__':
     creatures_t = ( # normally this comes from JSON or API etc.
