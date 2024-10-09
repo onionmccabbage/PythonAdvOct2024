@@ -8,8 +8,26 @@ def main():
     # we then declare routes for our web server
     # any non-specific route will assume 'GET'
     @app.route('/') # the route to the root of our server
-    def root():
+    @app.route('/<locale>') # the route to the root of our server
+    def root(locale='en'):
         return f'Welcome to {__name__} Flask server. You are at the root'
+    @app.route('/hello') # is it useful to provide several routes to the same content
+    @app.route('/ciao')  # maybe services have several product names
+    @app.route('/wotcha')# or even common mispellings
+    def welcome():
+        return 'Welcome to the web server'
+
+# we may need to access parts of the URL: often the REST arguments
+    @app.route('/greet')
+    @app.route('/greet/<name>') # if we have optional REST parameters, we must pass them in to the function
+    def greet(name='Timnit'):
+        '''return a page that handles REST parameters'''
+        content = f'<h2>Greetings {name}'
+        return content
+    
+
+    
+
     @app.route('/about')
     def about():
         msg = ' '.join(sys.argv)
