@@ -27,8 +27,12 @@ class Point(object):
         return (self.x, self.y) # return a tuple
     def moveBy(self, dx=0, dy=0):
         '''move the point by dx and dy'''
-        self.x += dx
-        self.y += dy
+        # validate
+        if type(dx) == int and type(dy)== int:
+            self.x += dx
+            self.y += dy
+        else:
+            raise TypeError()
 
 
 # we can write unittest to test the capabilities of our class (in another module)
