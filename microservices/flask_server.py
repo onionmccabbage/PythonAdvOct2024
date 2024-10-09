@@ -24,7 +24,14 @@ def main():
 <li>path: /web</li>
 </ul>
 '''
-
+        return page
+    # mini-challenge: write a route which returns the JSON for creatures (loaded from a file)
+    @app.route('/creatures')
+    def creatures():
+        # read in some JSON
+        with open('creatures.json', 'rt') as fin:
+            c = fin.read()
+        return c
 
     # we must remember to run the server
     app.run()
