@@ -3,7 +3,7 @@ import socket
 def writeToFile(data):
     '''we can log every request buffer to a file'''
     with open('server_log','ab') as fout:
-        fout.write(f'{data}\n')
+        fout.write(f'{data}\n'.encode())
 
 def server():
     '''a microservice for http clients. 
@@ -12,7 +12,7 @@ def server():
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server.bind(port_t)
     # next we let our server begin to listen for requsts
-    server.listen()
+    server.listen(4)
     print(f'Server is listening on {port_t[0]} port {port_t[1]}')
     # we ned the server to coninue to listen - a run loop
     while True:
