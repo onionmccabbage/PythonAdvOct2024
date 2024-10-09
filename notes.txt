@@ -37,7 +37,7 @@ Monday
 > after lunch review
 > functional programming: map, filter and reduce  
 > functional programming: parameters
-- comprehensions, generators and yield
+> comprehensions, generators and yield
 > Loading local and remote data (requests)
 
 Tuesday
@@ -64,8 +64,10 @@ Tuesday
   (you may come across the urllib.requests which is the old-skool way of doing things)
 
 Wednesday
-- context manager to switch context e.g. for handling data input and output
+- end of course feedback (Thursday)
+> context manager to switch context e.g. for handling data input and output
 - networking server/client (microservices)
+  anybody using microservices in Python already?
 - overview of Flask
 - doctest
   see https://docs.python.org/3/library/doctest.html
