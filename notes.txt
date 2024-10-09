@@ -69,6 +69,7 @@ Wednesday
 - networking server/client (microservices)
   anybody using microservices in Python already?
 - overview of Flask
+  see https://flask.palletsprojects.com/en/3.0.x/
 - doctest
   see https://docs.python.org/3/library/doctest.html
 - after lunch lab exercise
