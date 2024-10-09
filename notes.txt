@@ -69,7 +69,7 @@ Wednesday
   anybody using microservices in Python already?
 > overview of Flask
   see https://flask.palletsprojects.com/en/3.0.x/
-- after lunch lab exercise
+> after lunch lab exercise
 - doctest
   see https://docs.python.org/3/library/doctest.html
 - unittest and pytest see https://docs.pytest.org/
