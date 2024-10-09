@@ -1,5 +1,6 @@
 # we may need to pip install flask
 from flask import Flask
+from flask import render_template
 import sys
 
 def main():
@@ -27,8 +28,14 @@ def main():
     
     # Flask lets us use HTML templates for content. We may pass REST parameters to the template
     # Flask expects to use a folder called 'templates'
-
+    @app.route('/html')
+    def html():
+        return render_template('home.html')
     
+    @app.route('/welcome/')
+    @app.route('/welcome/<person>')
+    def welcome(person=None):
+        return render_template('welcome.html', person=person)
 
     @app.route('/about')
     def about():
