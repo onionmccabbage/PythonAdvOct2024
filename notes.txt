@@ -76,6 +76,7 @@ Wednesday
 
 Thursday
 - show working unittest assertRaises TypeError
+- pytest
 - profiling: timings etc. (cprofile)
 - multithreading, also limits of mutlithreading concurrency
   - how threads are done
