@@ -1,7 +1,8 @@
 import socket
 
 def server():
-    '''a microservice for http clients'''
+    '''a microservice for http clients. 
+    Here we echo whatever the client requests as upper-case'''
     port_t = ('localhost', 9874) # typically an IP address
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server.bind(port_t)
@@ -16,6 +17,10 @@ def server():
         # read what the client request contains (a portion of the request)
         buf = client.recv(1024) # just the first 1024 bytes
         print(f'Server has received {buf}')
+        # echo back to the client
+        client.send(buf.upper())
+        # we no longer wish to interact with this client, so we close the connection
+        client.close()
         # provide a means to quit the server
         if buf == b'quit':
             server.close()  # stop the server
