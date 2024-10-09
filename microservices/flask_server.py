@@ -32,9 +32,9 @@ def main():
     def html():
         return render_template('home.html')
     
-    @app.route('/welcome/')
-    @app.route('/welcome/<person>')
-    def welcome(person=None):
+    @app.route('/lunch/')
+    @app.route('/lunch/<person>')
+    def lunch(person=None):
         return render_template('welcome.html', person=person)
 
     @app.route('/about')
