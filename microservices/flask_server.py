@@ -1,5 +1,6 @@
 # we may need to pip install flask
 from flask import Flask
+import sys
 
 def main():
     '''here is a simple Flask implementation'''
@@ -9,8 +10,23 @@ def main():
     @app.route('/') # the route to the root of our server
     def root():
         return f'Welcome to {__name__} Flask server. You are at the root'
+    @app.route('/about')
+    def about():
+        msg = ' '.join(sys.argv)
+        return f'This is the about page. Arguments are: {msg}' # this is a plain string
+    @app.route('/web')
+    def web():
+        page = f'''
+<h3>Welcome</h3>
+<p>This is some HTML content</p>
+<ul>
+<li>server: {sys.argv[0]}</li>
+<li>path: /web</li>
+</ul>
+'''
 
-    # we must rememver to run the server
+
+    # we must remember to run the server
     app.run()
 
 
