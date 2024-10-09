@@ -25,6 +25,8 @@ def main():
         content = f'<h2>Greetings {name}'
         return content
     
+    # Flask lets us use HTML templates for content. We may pass REST parameters to the template
+    # Flask expects to use a folder called 'templates'
 
     
 
