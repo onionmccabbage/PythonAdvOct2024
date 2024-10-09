@@ -1,5 +1,10 @@
 import socket
 
+def writeToFile(data):
+    '''we can log every request buffer to a file'''
+    with open('server_log','ab') as fout:
+        fout.write(f'{data}\n')
+
 def server():
     '''a microservice for http clients. 
     Here we echo whatever the client requests as upper-case'''
@@ -17,6 +22,8 @@ def server():
         # read what the client request contains (a portion of the request)
         buf = client.recv(1024) # just the first 1024 bytes
         print(f'Server has received {buf}')
+        # commit the buffer to a file
+        writeToFile(buf)
         # echo back to the client
         client.send(buf.upper())
         # we no longer wish to interact with this client, so we close the connection
