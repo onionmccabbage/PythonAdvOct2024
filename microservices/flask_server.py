@@ -2,6 +2,7 @@
 from flask import Flask
 from flask import render_template
 import sys
+import requests
 
 def main():
     '''here is a simple Flask implementation'''
@@ -59,6 +60,18 @@ def main():
         with open('creatures.json', 'rt') as fin:
             c = fin.read()
         return c
+
+    # we can make our server a proxy
+    # e.g. grab from https://jsonplaceholder.typicode.com
+    @app.route('/json') # be careful - you may need to check CORS permissions
+    @app.route('/json/<cat>')
+    @app.route('/json/<cat>/<id>')
+    def j(cat='albums', id=1):
+        response = requests.get(f'https://jsonplaceholder.typicode.com/{cat}/{id}')
+        response_j = response.json() # or xml, text, html etc.
+        return response_j
+
+
 
     # we must remember to run the server
     app.run()
