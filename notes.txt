@@ -64,15 +64,14 @@ Tuesday
   (you may come across the urllib.requests which is the old-skool way of doing things)
 
 Wednesday
-- end of course feedback (Thursday)
 > context manager to switch context e.g. for handling data input and output
-- networking server/client (microservices)
+> networking server/client (microservices)
   anybody using microservices in Python already?
-- overview of Flask
+> overview of Flask
   see https://flask.palletsprojects.com/en/3.0.x/
+- after lunch lab exercise
 - doctest
   see https://docs.python.org/3/library/doctest.html
-- after lunch lab exercise
 - unittest and pytest see https://docs.pytest.org/
 
 Thursday
