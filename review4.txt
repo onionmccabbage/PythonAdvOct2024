@@ -1,4 +1,4 @@
-Advanced Python Review 4
+Advanced Python Review 4 1hr until 2:40 then show-and-tell
 ======================== 
 There is an API end-point here: https://swapi.info/api  	   
 (it is a Python API written in Django)
