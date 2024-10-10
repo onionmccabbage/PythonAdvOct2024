@@ -13,7 +13,7 @@ class MyClassB(): # here we do not inherit from Thread
         for _ in range(0,10):
             msg += f'{n} is sleeping...'
             time.sleep(random.random()*0.1)
-        print(msg) # try to minimize I/O
+        # print(msg) # try to minimize I/O
 
 def main():
     ''' we may invoke our class as a thread'''
@@ -29,7 +29,7 @@ def main():
         # we may target an instance of a class which implements __call__
         thread_l.append(Thread(target=cA, args=(_,)))
         # CAREFUL - no point start-join each thread here, that would be procedural
-    print('main thread has spawned several child threads')
+    # print('main thread has spawned several child threads')
     # we may start our threads
     for _ in thread_l:
         _.start()
