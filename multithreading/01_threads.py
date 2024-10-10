@@ -20,9 +20,15 @@ if __name__ == '__main__':
     tD = Thread(target=myFn,  args=('D',)) 
     tE = Thread(target=myFn,  args=('E',)) 
     print('on the main thread')
-    tA.start() # at this point the function will start execution on a separate thread
-    tB.start()
-    tC.start()
+    tB.start() # these threads can run concurrently
     tD.start()
     tE.start()
+    tC.start()
+    tA.start() # at this point the function will start execution on a separate thread
     print('still on the main thread')
+    tA.join() # block the main thread until tA re-joins
+    tB.join()
+    tC.join()
+    tD.join()
+    tE.join()
+    print('when does this get printed....') # main thread continues when the other threads have (re)joined
