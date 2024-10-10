@@ -22,6 +22,7 @@ def main():
     for _ in range(0,5):
         # we may target an instance of a class which implements __call__
         thread_l.append(Thread(target=cA, args=(_,)))
+        # CAREFUL - no point start-join each thread here, that would be procedural
     print('main thread has spawned several child threads')
     # we may start our threads
     for _ in thread_l:
