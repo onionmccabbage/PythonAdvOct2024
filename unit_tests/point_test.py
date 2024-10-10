@@ -16,7 +16,8 @@ class testPoint(unittest.TestCase):
         self.assertEqual( self.point.x, 8 )
         self.assertEqual( self.point.y, 7 )
     def testRaises(self):
-        self.assertRaises( self.point.moveBy('a', 'b'), TypeError )
+        with self.assertRaises(TypeError):
+            self.point.moveBy('a', 'b')
 
 if __name__ == '__main__':
     unittest.main() # invoke the tests
