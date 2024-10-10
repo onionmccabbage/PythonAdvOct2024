@@ -29,5 +29,10 @@ if __name__ == '__main__':
     tC.start()
     tD.start()
     tE.start()
-
+    # we usually wait for the threads to rejoin
+    tA.join()
+    tB.join()
+    tC.join()
+    tD.join()
+    tE.join()
     print('where is this printed.....')
