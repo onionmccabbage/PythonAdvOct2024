@@ -6,6 +6,8 @@ class MyClass(Thread): # we inherit from the Thread class
     '''Any class may inherit from Thread'''
     def __init__(self, n, x):
         # call the __init__ of the parent class (Thread)
+        # super().__init__(group, target, name, args, kwargs, daemon=daemon) # we tend to avoid this!!
+        # super().__init__() # NB we do not pass self
         Thread.__init__(self)
         self.n = n # we could use @property setter/getter functions
         self.x = x

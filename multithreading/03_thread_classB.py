@@ -19,7 +19,8 @@ def main():
     cA = MyClassB()
     print('on the main thread')
     thread_l = []
-    for _ in range(0,5):
+    # how many threads are actually available? Depends on the system and what else is running
+    for _ in range(0,2046): # the OS will manage a pool of threads, queuing and recycling threadds as needed
         # we may target an instance of a class which implements __call__
         thread_l.append(Thread(target=cA, args=(_,)))
         # CAREFUL - no point start-join each thread here, that would be procedural
