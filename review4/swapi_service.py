@@ -1,4 +1,4 @@
-# a service to access https://swapi.co/api
+# a service to access https://swapi.info/api
 import requests
 
 class SwapiService(object):
